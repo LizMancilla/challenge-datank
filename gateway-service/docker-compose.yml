@@ -1,0 +1,19 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+     - "5000:5000"
+    links:
+     - poll
+     - stats
+     - redis
+    environment: 
+     POLL_HOST: poll
+     STATS_HOST: stats
+  poll:
+    image: poll-service_web
+  stats:
+    image: stats-service_web
+  redis:
+    image: redis
