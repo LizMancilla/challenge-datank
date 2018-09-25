@@ -1,0 +1,15 @@
+{
+  "environment": "development",
+  "hydra": {
+    "serviceName": "poll-service",
+    "serviceIP": "",
+    "servicePort": 3300,
+    "serviceType": "poll",
+    "serviceDescription": "",
+    "redis": {
+      "url": "redis",
+      "port": 6379,
+      "db": 15
+    }
+  }
+}
