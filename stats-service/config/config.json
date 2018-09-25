@@ -1,0 +1,15 @@
+{
+  "environment": "development",
+  "hydra": {
+    "serviceName": "stats-service",
+    "serviceIP": "",
+    "servicePort": 4400,
+    "serviceType": "stats",
+    "serviceDescription": "",
+    "redis": {
+      "url": "redis",
+      "port": 6379,
+      "db": 15
+    }
+  }
+}
